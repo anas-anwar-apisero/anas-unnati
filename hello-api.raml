@@ -1,0 +1,18 @@
+#%RAML 1.0
+title: my-test-api
+version: 1.0.0
+
+protocols:
+- HTTPS
+
+/hello:
+  displayName: hello world.
+  get:
+      description: Responds with hello world
+      responses:
+       200:
+         body:
+           application/json:        
+            example: !include /example.raml
+
+
