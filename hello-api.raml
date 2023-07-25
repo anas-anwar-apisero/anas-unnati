@@ -10,7 +10,7 @@ protocols:
   get:
       queryParameters:
         phoneNumber:
-          type: string | nil
+          type: (string | nil)
           pattern: ^$|\+?[0-9]{10}$
           required: false
           description: Phone Number of the Customer
