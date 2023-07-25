@@ -16,6 +16,13 @@ protocols:
           description: Phone Number of the Customer
           maxLength: 20
           example: ""
+        email:
+          type: string
+          required: false
+          pattern: ^.+@.+\..+$
+          description: Email Id of the Customer
+          maxLength: 50
+          example: "JohnathanSmyth@gmail.com"  
       description: Responds with hello world
       responses:
        200:
