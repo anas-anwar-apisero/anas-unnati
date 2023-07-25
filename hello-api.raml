@@ -10,7 +10,12 @@ protocols:
   get:
       queryParameters:
         phoneNumber:
-          
+          type: string
+          pattern: ^\+?[0-9]{10}$
+          required: false
+          description: Phone Number of the Customer
+          maxLength: 20
+          example: "1234123412"
       description: Responds with hello world
       responses:
        200:
