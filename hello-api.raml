@@ -11,11 +11,11 @@ protocols:
       queryParameters:
         phoneNumber:
           type: string
-          
+          pattern: ^$|\+?[0-9]{10}$
           required: false
           description: Phone Number of the Customer
           maxLength: 20
-          example: ""
+          example: null
         email:
           type: string
           required: false
