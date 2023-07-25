@@ -9,13 +9,14 @@ protocols:
   displayName: hello world.
   get:
       queryParameters:
-        phoneNumber?:
+        phoneNumber:
           type: string
-          pattern: ^$|\+?[0-9]{10}\+$
+          # pattern: ^$|\+?[0-9]{10}$
           required: false
           description: Phone Number of the Customer
           maxLength: 20
           example: null
+          
         email:
           type: string
           required: false
