@@ -20,10 +20,10 @@ protocols:
         email:
           type: string
           required: false
-          pattern: ^$|\+?.+@.+\..+$
+          pattern: (^.+@.+\..+$)|(^$)
           description: Email Id of the Customer
           maxLength: 50
-          example: ""  
+          example: "anas.anwar@gmail.com"  
       description: Responds with hello world
       responses:
        200:
