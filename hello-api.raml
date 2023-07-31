@@ -5,6 +5,16 @@ version: 1.0.0
 protocols:
 - HTTPS
 
+
+traits:
+  customerKeyRequired:
+    headers:
+      functionalId:
+        type: avalaraCustomerLib.customerKey
+        description: functionalId contains customerNumber, state, customerType will form customer key as json string
+        example: !include examples/customerKeyExample.raml
+
+
 /hello:
   displayName: hello world.
   get:
