@@ -12,29 +12,12 @@ traits:
       functionalId:
         type: avalaraCustomerLib.customerKey
         description: functionalId contains customerNumber, state, customerType will form customer key as json string
-        example: !include examples/customerKeyExample.raml
+        example: !include example.raml
 
 
 /hello:
   displayName: hello world.
-  get:
-      queryParameters:
-        phoneNumber: 
-          type: string
-          pattern: (^[0-9]{10}$)|(^$)
-          required: false
-          description: Phone Number of the Customer
-          maxLength: 20
-          example: ""
-
-        email:
-          type: string
-          required: false
-          pattern: (^.+@.+\..+$)|(^$)
-          description: Email Id of the Customer
-          maxLength: 50
-          example: ""  
-      description: Responds with hello world
+  
       responses:
        200:
          body:
